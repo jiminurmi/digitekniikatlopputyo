@@ -1,0 +1,17 @@
+h1{
+    font-style: italic;
+    text-align: center;
+    color:floralwhite;
+}
+body{
+    background-image:url(../images/mersu12.gif);
+	background-repeat:repeat-x;
+	background-size:cover;
+    
+}
+
+img {
+    height: 100px;
+    width: 150px;
+    float: left;
+}

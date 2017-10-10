@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Yhteystiedot ja varaus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="css/jquery-ui-1.10.4.custom/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+    <link href="css/jquery-ui-1.10.4.custom/css/mint-choc/jquery-ui-1.10.4.custom.min.css" rel="stylesheet">
+     <link href="css/tyyli.css" rel="stylesheet">
+    <link rel="icon" href="images/mersulogo.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="etusivu.html">MersuStore<img alt="mersulogo" style="height:16px;width:16px" src="images/mersulogo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li><a href="tuotetiedot.html">Tuotetiedot</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li class="active"><a href="#yhteystiedot">Yhteystiedot ja yhteydenotto</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+  <h1>Tästä voit varata koeajon joko CLA, SLC, tai AMG GT-mallisella autolla</h1>
+    
+       <!-- ORDER FORM -->
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button id="koeajo" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#orderModal" style="width:1150px" align="center">Varaa koeajo</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="orderModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header" style="padding:35px 50px;">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4><span class="glyphicon glyphicon-road"></span>Lomake</h4>
+                    </div>
+                    <div class="modal-body" style="padding:40px 50px;">
+                        <form role="form" action="kiitos.html">
+                            <div class="form-group">
+                                <label for="r_fullName"><span class="glyphicon glyphicon-user"></span>Etunimi ja sukunimi</label>
+                                <input type="text" class="form-control" id="r_fullName" placeholder="Anna etunimi ja sukunimi" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="r_email"><span class="glyphicon glyphicon-inbox"></span>Sähköposti</label>
+                                <input type="email" class="form-control" id="r_email" placeholder="Anna sähköposti" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="r_usrtel"><span class="glyphicon glyphicon-earphone"></span>Puhelinnumero</label>
+                                <input type='tel' class="form-control" id="r_usrtel" placeholder="Anna puhelinnumero" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="datepicker"><span class="glyphicon glyphicon-calendar"></span>Kalenteri</label>
+                                <input type="date" id="datepicker" class="form-control" placeholder="Valitse päivämäärä" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="r_additionalInformation"><span class="glyphicon glyphicon-wrench"></span>Lisätiedot</label>
+                                <input type="text" id="r_additionalInformation" class="form-control" placeholder="Anna lisätiedot">
+                            </div>
+                            <select class="form-control" name="Mercedes-Benz" placeholder="Valitse malli" required>
+                                <option value="" disabled="disabled" selected="selected">Valitse haluamasi malli</option>
+                                <option value="CLA">CLA</option>
+                                <option value="SLC">SLC</option>
+                                <option value="AMG GT">AMG GT</option>
+                            </select>
+                            <br>
+                             <select class="form-control" name="Mercedes-Benz" placeholder="Valitse liike" required>
+                                <option value="" disabled="disabled" selected="selected">Valitse liike mistä haluat koeajaa</option>
+                                <option value="maahan">Mercedes-Benz Maahantuonti</option>
+                                <option value="liike">Mercedes-Benz Liike</option>
+                                <option value="kauppa">Mercedes-Benz Kauppa</option>
+                            </select>
+                            <br/>
+                            <button class="btn btn-success btn-block"<a href="kiitos.html"/><span class="glyphicon glyphicon-ok"></span>Lähetä varaus
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-danger btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container" align="center">
+
+		<h2>Lähetä palautetta</h2>
+		
+			<form>
+                <p>Nimi:</p><br>
+			<input type="text" id="nimi" required>
+			<br>
+                <p>Viesti:</p><br>
+			<textarea maxlength="100" id="viesti" required></textarea><br>
+			<button id="submitBtn" onClick="submitClick()">Lähetä</button>
+			</form>
+	
+	
+	
+		<h2>Viestisi</h2>
+		<div id="viestiketju">
+		</div>
+	
+</div>
+    <br><br><br><br>
+    
+     <div id="yhteys"class="container">
+  <h1>Yhteystiedot</h1>
+  <p>Liikkeiden yhteystiedot</p>            
+  <table id="yhteyss" class="table">
+    <thead>
+      <tr>
+        <th>Liike</th>
+        <th>Osoite</th>
+        <th>Sähköposti</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mercedes-Benz Maahantuonti</td>
+        <td>Mersumaahantuontikatu 10</td>
+        <td>mersumaahan@mersu.fi</td>
+      </tr>
+      <tr>
+        <td>Mercedes-Benz Liike</td>
+        <td>Mersukatu 8</td>
+        <td>mersuliike@mersu.fi</td>
+      </tr>
+      <tr>
+        <td>Mercedes-Benz Kauppa</td>
+        <td>Mesetie 24 </td>
+        <td>mesekauppa@mese.fi</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+<h2>Mercedes Benz liike kartalta</h2>	
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.896802735784!2d24.988156616111656!3d60.29823548200826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469207f3636b9537%3A0x7cdcff043f76427c!2sVeho!5e0!3m2!1sfi!2sfi!4v1507024572536" width="600" height="450" frameborder="0" style="border:0;width:100%;height:200px;" allowfullscreen></iframe>
+ 
+
+
+
+
+ 
+<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyApXKE2NPyLi5b9noyXb05Szy3lLYzlYvM",
+    authDomain: "oppimistehtava-1b7d0.firebaseapp.com",
+    databaseURL: "https://oppimistehtava-1b7d0.firebaseio.com",
+    projectId: "oppimistehtava-1b7d0",
+    storageBucket: "",
+    messagingSenderId: "519206440246"
+  };
+  firebase.initializeApp(config);
+
+
+  	var firebaseRef = firebase.database();
+   
+  var nimi = document.getElementById("nimi") ;
+  var mainText = document.getElementById("viesti") ;
+  var submitBtn = document.getElementById("submitBtn");
+
+  function submitClick(){
+	
+	// tekstin tallennus
+	
+	var firebaseRef = firebase.database().ref();
+	var lahettaja = nimi.value;
+	var teksti = mainText.value;
+	firebaseRef.child("viestit").push().set({
+		nimi: lahettaja,
+		viesti: teksti
+	})
+};
+
+  
+	var rootRef = firebase.database().ref().child('viestit');
+	rootRef.on('child_added', snap =>
+		{
+		 var nimi = snap.child("nimi").val();
+		 var viesti = snap.child("viesti").val(); 
+	$("#viestiketju").append("<p>"+ nimi + ": " + viesti + "</p>"); 
+}
+);
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tuotetiedot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link href="css/tyyli.css" rel="stylesheet">
+    <link rel="icon" href="images/mersulogo.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="etusivu.html">MersuStore<img style="height:16px;width:16px" src="images/mersulogo.png"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="etusivu.html">Etusivu</a></li>
+        <li class="active"><a href="#tuotetiedot">Esittely</a></li>
+        <li><a href="galleria.html">Galleria</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot ja yhteydenotto</a></li>
+      </ul>
+   
+    </div>
+  </div>
+</nav>
+    <div>
+  <h1 style="color:darkgray">Esittely Mercedes-Benz malleistamme</h1>
+   <img id="logo" src="images/mersulogo.png">
+    <br><br><br><br><br><br><br>
+<h2 style="color:darkgray">Tästä voit katsoa CLA, SLC tai AMG GT-mallien tiedot</h2>
+    </div>
+    
+    <div class ="container-fluid" id="haitari">
+<button class="accordion">CLA</button>
+<div class="panel">
+ 
+    <img src="images/mersu3.gif" style="width:500px; height:300px; padding:10px ">
+    Näyttävän voimakkaat linjat yhdessä sisään- ja ulospäin kaartuvien pintojen kanssa antavat CLA Coupélle sen edistyksellisen, urheilullisen luonteen. Sen ikkunat ovat tyypilliset coupé-autolle: kehyksettömät ikkunat taikka kromiset tai korkeakiiltoisen mustat kehykset (varusteista riippuen) antavat autolle erityisen ylellisen ja näyttävän ilmeen. Kattolinja kaartuu hienostuneesti perää kohden, jolle puskuri ja siihen integroidut pakoputken päätykappaleet sekä tyylikäs takaspoileri antavat omintakeisen ilmeen. Perässä komeilevat CLA:lle ominaisen malliset takavalot, jotka saa lisävarusteena täysin LED-valoin toteutettuina. <br> <br>
+    
+    <a style="color:white" href="http://www.mercedes-benz.fi/content/finland/mpc/mpc_finland_website/fi/home_mpc/passengercars/home/new_cars/models/cla-class/c117.html">Linkki Mercedes-Benzin sivuille, jossa voit katsoa tarkemmat tiedot CLA-mallista:</a>
+    </div>
+
+
+<button class="accordion">SLC</button>
+<div class="panel">
+    <img src="images/mersu4.gif" style="width:500px; height:300px; padding:10px ">
+  Maskuliinisen urheilullinen keula saa aikaan vahvan ilmeen, jota uuden sukupolven SLC huokuu myös seistessään paikallaan. Myös edistyksellinen valotekniikka LED Intelligent Light System -valojärjestelmän yhteydessä vahvistaa tätä vaikutelmaa.
+
+Voimakkaat mittasuhteet ovat ominaisia auton perälle urheilullisesti muotoiltuine lokasuojineen. Erityisesti takapuskuri, jossa on musta diffuusori ja integroidut pakoputkenpäät, viestittää uuden sukupolven SLC:n ajodynaamisista mahdollisuuksista.
+     <a style="color:white" href="http://www.mercedes-benz.fi/content/finland/mpc/mpc_finland_website/fi/home_mpc/passengercars/home/new_cars/models/slc/r172.html">Linkki Mercedes-Benzin sivuille, jossa voit katsoa tarkemmat tiedot SLC-mallista:</a>
+    </div>
+
+
+<button class="accordion">AMG GT</button>
+<div class="panel">
+    <img src="images/mersu5.gif" style="width:500px; height:300px; padding:10px ">
+  Mercedes-AMG GT3 -kilpa-autosta aina Mercedes-AMG GT Roadsteriin saakka: Mercedes-AMG GT -perheen kaikkia autoja yhdistää se, että
+niiden juuret ovat moottoriurheilussa. Niiden erehtymättömästi tunnistettava soundi tarttuu heti korvaan. Niiden ainutlaatuinen design
+kiinnittää heti huomion. Mercedes-AMG GT -perhe muodostaa tuotevalikoimamme terävimmän kärjen. Siihen kuuluvat Mercedes-AMG GT,
+Mercedes-AMG GT S, Mercedes-AMG GT C Edition 50 ja Mercedes-AMG GT R sekä avoautomallit Mercedes-AMG GT Roadster ja
+Mercedes-AMG GT C Roadster. Moottoriurheilusta innostuneiden suunnittelijoiden ansiosta niillä on poikkeuksellisen urheiluauton geenit:
+tekniikka ja insinööriosaaminen periytyvät suoraan kilparadoilta. Toisin sanoen: ”Handcrafted by Racers”.
+    <a style="color:white" href="http://www.mercedes-benz.fi/content/finland/mpc/mpc_finland_website/fi/home_mpc/passengercars/home/new_cars/models/mercedes_amg_gt/c190.html">Linkki Mercedes-Benzin sivuille, jossa voit katsoa tarkemmat tiedot AMG GT-mallista:</a>
+</div>
+    </div>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+      
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
+</body>
+</html>

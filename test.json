@@ -1,0 +1,14 @@
+[{
+    "tuote":"Kengät",
+    "merkki":"Nike",
+    "kuvaus":"Uudet rennot Roshe Run malliset joka asusteeseen sopivat kengät",
+    "hinta":"100",
+    "varastomäärä":"120"
+},
+ {
+    "tuote":"Kengät",
+    "merkki":"Adidas",
+    "kuvaus":"Uudet rennot Flux malliset joka asusteeseen sopivat kengät",
+    "hinta":"150",
+    "varastomäärä":"90"
+}]
